@@ -60,7 +60,7 @@ app.post("/failier.html",function(req,res){
 
 }
 //process.env.PORT is used to get the dynamic port by heroku
-app.listen(process.env.PORT,function(){
+app.listen(process.env.PORT||3000,function(){
   console.log("server has started");
 });
 //api key
